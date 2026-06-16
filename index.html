@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Git Reset Command</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Git Reset Command</h1>
+
+      <p class="description">
+        Git Reset is used to move the current branch to a previous commit. It
+        can also unstage files or completely remove changes depending on the
+        option used.
+      </p>
+
+      <div class="card">
+        <h2>Soft Reset</h2>
+
+        <code>git reset --soft HEAD~1</code>
+
+        <p>Removes the last commit but keeps all changes staged.</p>
+      </div>
+
+      <div class="card">
+        <h2>Mixed Reset (Default)</h2>
+
+        <code>git reset HEAD~1</code>
+
+        <p>Removes the last commit and unstages the changes.</p>
+      </div>
+
+      <div class="card">
+        <h2>Hard Reset</h2>
+
+        <code>git reset --hard HEAD~1</code>
+
+        <p>Removes the last commit and permanently deletes all changes.</p>
+      </div>
+
+      <div class="warning">
+        <h3>Warning</h3>
+
+        <p>
+          Avoid using <strong>--hard</strong> unless you're sure. Deleted
+          changes cannot be recovered easily.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
